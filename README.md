@@ -1,27 +1,62 @@
 
 ```typescript
-type Dev = { name: string; skills: string[] };
-class DevProfile {
-  constructor(private readonly developer: Dev) {}
-  showProfile() {
+type Dev = {
+  nome: string;
+  cargo: string;
+  stackPrincipal: string[];
+  stackEmAprendizado: string[];
+  interesses: string[];
+};
+
+class PerfilDev {
+  constructor(private readonly desenvolvedor: Dev) {}
+
+  mostrarPerfil() {
+    const formatarLista = (itens: string[]) =>
+      itens.map(item => `- ${item}`).join("\n");
+
     console.log(`
-      Name: ${this.developer.name}
-      Skills: ${this.developer.skills.join(", ")}
+Nome: ${this.desenvolvedor.nome}
+Cargo: ${this.desenvolvedor.cargo}
+
+Stack Principal:
+${formatarLista(this.desenvolvedor.stackPrincipal)}
+
+Tecnologias em Aprendizado:
+${formatarLista(this.desenvolvedor.stackEmAprendizado)}
+
+Interesses:
+${formatarLista(this.desenvolvedor.interesses)}
     `);
   }
 }
 
-const myProfile = new DevProfile({
-  name: "João Pedro Machado",
-  skills: [
-    "Java & Spring Boot",
-    "Node.js & Express",
-    "React & JS/TS",
-    "PostgreSQL & MySQL",
-    "Bash & PowerShell"
+const meuPerfil = new PerfilDev({
+  nome: "João Pedro Machado",
+  cargo: "Desenvolvedor Back-end",
+  stackPrincipal: [
+    "Java",
+    "Spring Boot",
+    "Microsserviços",
+    "APIs REST",
+    "PostgreSQL",
+    "MySQL"
+  ],
+  stackEmAprendizado: [
+    "Golang",
+    "Desenvolvimento de CLI",
+    "Estruturas de Dados e Algoritmos"
+  ],
+  interesses: [
+    "Arquitetura de Software",
+    "Sistemas Distribuídos",
+    "Ferramentas para Desenvolvedores",
+    "Aprender construindo projetos desafiadores"
   ]
 });
-myProfile.showProfile();
+
+meuPerfil.mostrarPerfil();
+
 ```
 ---
 
