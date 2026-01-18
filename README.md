@@ -70,6 +70,6 @@ Objetivos: evoluir em arquitetura de software, microsserviços e sistemas distri
 Aplicação de CLI para controle do Spotify pelo Terminal
 
 🔧 Tecnologias: Golang, CLI, JSON  
-🔗 Repositório: [*(adicione o link aqui)*](https://github.com/jotagm/spotiftCLI)
+🔗 Repositório: [*((https://github.com/jotagm/spotiftCLI))*]
 
 ---
