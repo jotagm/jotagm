@@ -66,11 +66,11 @@ Backend de um app mobile para clubes de leitura — substitui o caos do grupo de
 🔧 Tecnologias: Java 21, Spring Boot 3, Spring Security + JWT, PostgreSQL, Flutter (mobile)
 🔗 Repositório: [booklit-server](https://github.com/jotagm/booklit-server)
 
-### 🔹 Server Sync KoReader
+### 🔹 Server Sync Reader
 
-Servidor de sincronização de progresso de leitura para o KoReader, com armazenamento em Bucket.
-🔧 Tecnologias: Golang, Docker
-🔗 Repositório: [server_sync_koreader](https://github.com/jotagm/server_sync_koreader)
+Servidor de sincronização de progresso de leitura para o Reader, com armazenamento em Bucket.
+🔧 Tecnologias: Golang, Docker, S3
+🔗 Repositório: [server_sync_koreader](https://github.com/jotagm/server_sync_reader)
 
 ### 🔹 Spotify CLI
 
